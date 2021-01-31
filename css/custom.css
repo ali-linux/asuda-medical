@@ -281,3 +281,7 @@
     display: none;
   }
 }
+
+.box_list ul {
+  box-sizing: border-box;
+}
