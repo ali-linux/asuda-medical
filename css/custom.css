@@ -1,0 +1,283 @@
+:root {
+  --primary-color: #287a8f;
+  --secondary-color: #86cadc;
+  --black-color: #222222;
+  --white-color: #f5f8fa;
+}
+
+.doc-work-pic {
+  background-size: cover;
+  width: 565px;
+  height: 565px;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+}
+.doc-work p {
+  font-size: 1.2rem;
+}
+
+.main-user {
+  position: relative;
+  z-index: 9;
+  width: auto;
+  top: 11px;
+  float: right;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main-user ul,
+.main-user ul li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.main-user ul a,
+.main-user ul li a {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: block;
+  padding: 10px;
+}
+
+/*First level styles */
+.main-user > ul > li > a {
+  color: #333;
+  padding: 0 8px 17px 8px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.main-user > ul > li:hover > a {
+  color: var(--primary-color);
+}
+.user-icon {
+  right: 180px;
+  bottom: 5px;
+  position: absolute;
+}
+.main-user .user-icon i {
+  position: absolute;
+  /* right: 200px; */
+  /* bottom: -10px; */
+  font-size: 2rem;
+}
+.main-user .user-icon ul {
+  top: 40px;
+}
+.user-icon-div {
+  position: relative;
+}
+
+.main-user {
+  width: auto;
+}
+
+.main-user a {
+  white-space: nowrap;
+}
+
+.main-user ul li {
+  display: inline-block;
+}
+
+.main-user ul li.submenu:hover > a:before,
+.main-user ul li.submenu:hover > a:after {
+  bottom: -10px;
+  opacity: 0;
+}
+
+/* Submenu*/
+.main-user ul ul,
+.main-user ul li .menu-wrapper {
+  position: absolute;
+  border-top: 2px solid var(--primary-color);
+  z-index: 1;
+  visibility: hidden;
+  left: 3px;
+  top: 100%;
+  margin: 0;
+  display: block;
+  padding: 0;
+  background: #fff;
+  min-width: 210px;
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+  -moz-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+  opacity: 0;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.main-user ul li .menu-wrapper {
+  padding: 10px 15px !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-user ul li:hover > ul,
+.main-user ul li:hover .menu-wrapper {
+  padding: 0;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.main-user ul .menu-wrapper ul {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-top: none;
+  margin: 0;
+  position: static;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.main-user ul .menu-wrapper ul:before {
+  border: 0;
+}
+
+.main-user ul ul li {
+  display: block;
+  height: auto;
+  padding: 0;
+}
+
+.main-user ul ul li a {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #555;
+  border-bottom: 1px solid #ededed;
+  display: block;
+  padding: 15px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main-user ul ul li:last-child a {
+  border-bottom: none;
+}
+
+.main-user ul ul li:hover > a {
+  background-color: #f9f9f9;
+  color: var(--primary-color);
+  padding-left: 18px;
+}
+
+/* Submenu 3rd level */
+.main-user ul ul li.third-level > a {
+  font-weight: normal !important;
+}
+.main-user ul ul li.third-level > a:hover {
+  background-color: #f9f9f9;
+  color: var(--primary-color);
+  padding-left: 18px;
+  opacity: 1;
+}
+.main-user ul ul li.third-level > a:after {
+  font-family: "ElegantIcons";
+  content: "\35";
+  float: right;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-top: -2px;
+}
+
+.main-user ul ul ul {
+  position: absolute;
+  border-top: 0;
+  z-index: 1;
+  height: auto;
+  left: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  min-width: 190px;
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+  -moz-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+}
+
+@media only screen and (max-width: 991px) {
+  .main-user ul ul {
+    width: 20px;
+    /* height: 50px; */
+  }
+  .main-user {
+    left: 110px;
+    top: 7px;
+  }
+  .main-user ul ul {
+    width: 5px;
+  }
+  .main-user ul ul,
+  .main-user ul ul li,
+  .main-userul ul li a {
+    padding: 0;
+    margin: 0;
+  }
+  .main-user ul ul,
+  .main-user ul li .menu-wrapper {
+    min-width: 87px;
+  }
+  a.show-submenu-mega + .menu-wrapper.show_mega,
+  .main-user a.show-submenu + ul.show_normal {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.doc-work-pic {
+  max-width: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  #doc-slider {
+    display: contents;
+  }
+  #spec-list {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #doc-slider {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #doc-grid {
+    display: contents;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #doc-grid {
+    display: none;
+  }
+}
