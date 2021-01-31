@@ -44,7 +44,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-width: 100%;
   z-index: 100;
   min-height: 100%;
   z-index: 99;
@@ -113,7 +112,7 @@
     display: block;
     padding: 0;
     background: #fff;
-    min-width: 150px;
+    min-width: 10px;
     -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
     -moz-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
     box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
