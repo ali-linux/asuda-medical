@@ -524,7 +524,14 @@ ul#top_access li#user figure img {
 }
 
 /* logo home with h1 */
+#logo_home {
+  position: absolute;
+  width: 163px;
+  height: 49px;
+}
 #logo_home h1 {
+  width: 163px;
+  height: 49px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -542,10 +549,18 @@ ul#top_access li#user figure img {
   only screen and (-o-min-device-pixel-ratio: 2 / 1),
   only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
+  #logo_home h1 {
+    width: 80px;
+    height: 49px;
+  }
+  #logo_home {
+    width: 80px;
+    height: 49px;
+  }
   #logo_home h1 a {
     width: 163px;
     height: 49;
-    background-image: url(../img/main_logo.png);
+    background: url(../img/main_logo.png) no-repeat center center/cover;
     background-size: cover;
   }
 }

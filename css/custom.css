@@ -17,11 +17,9 @@
 }
 
 .main-user {
-  position: relative;
+  position: absolute;
   z-index: 9;
-  width: auto;
-  top: 11px;
-  float: right;
+  right: 80%;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -54,23 +52,16 @@
 .main-user > ul > li:hover > a {
   color: var(--primary-color);
 }
-.user-icon {
-  right: 180px;
-  bottom: 5px;
-  position: absolute;
-}
+
 .main-user .user-icon i {
-  position: absolute;
+  /* position: absolute; */
   /* right: 200px; */
   /* bottom: -10px; */
   font-size: 2rem;
 }
-.main-user .user-icon ul {
+/* .main-user .user-icon ul {
   top: 40px;
-}
-.user-icon-div {
-  position: relative;
-}
+} */
 
 .main-user {
   width: auto;
@@ -81,7 +72,7 @@
 }
 
 .main-user ul li {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .main-user ul li.submenu:hover > a:before,
@@ -93,12 +84,12 @@
 /* Submenu*/
 .main-user ul ul,
 .main-user ul li .menu-wrapper {
-  position: absolute;
+  /* position: absolute; */
   border-top: 2px solid var(--primary-color);
   z-index: 1;
   visibility: hidden;
-  left: 3px;
-  top: 100%;
+  /* left: 3px; */
+  /* top: 100%; */
   margin: 0;
   display: block;
   padding: 0;
@@ -145,7 +136,7 @@
   box-shadow: none;
   border-top: none;
   margin: 0;
-  position: static;
+  /* position: static; */
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -159,8 +150,18 @@
 
 .main-user ul ul li {
   display: block;
-  height: auto;
+  /* height: auto; */
   padding: 0;
+}
+.main-user > ul {
+  position: relative;
+}
+.main-user > ul,
+.main-user,
+.main-user ul li {
+  width: 75px;
+  height: 50px;
+  /* position: absolute; */
 }
 
 .main-user ul ul li a {
@@ -222,35 +223,6 @@
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
 }
 
-@media only screen and (max-width: 991px) {
-  .main-user ul ul {
-    width: 20px;
-    /* height: 50px; */
-  }
-  .main-user {
-    left: 110px;
-    top: 7px;
-  }
-  .main-user ul ul {
-    width: 5px;
-  }
-  .main-user ul ul,
-  .main-user ul ul li,
-  .main-userul ul li a {
-    padding: 0;
-    margin: 0;
-  }
-  .main-user ul ul,
-  .main-user ul li .menu-wrapper {
-    min-width: 87px;
-  }
-  a.show-submenu-mega + .menu-wrapper.show_mega,
-  .main-user a.show-submenu + ul.show_normal {
-    display: block;
-    visibility: visible;
-  }
-}
-
 .doc-work-pic {
   max-width: 100%;
   width: 100%;
@@ -264,6 +236,11 @@
   #spec-list {
     display: none;
   }
+  #logo_home h1 a {
+    width: 80px;
+    height: 49px;
+    background: url(../img/just_logo.png) no-repeat center center/cover;
+  }
 }
 @media only screen and (min-width: 768px) {
   #doc-slider {
@@ -271,12 +248,12 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   #doc-grid {
     display: contents;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #doc-grid {
     display: none;
   }
@@ -284,4 +261,34 @@
 
 .box_list ul {
   box-sizing: border-box;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
+  .mob {
+    display: contents;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .desktop {
+    display: contents;
+  }
+  .mob {
+    display: none;
+  }
+}
+
+.header_sticky {
+  height: 70px;
+}
+@media only screen and (max-width: 990px) {
 }

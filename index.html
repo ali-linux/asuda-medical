@@ -33,6 +33,7 @@
 
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/desktop_nav.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -43,34 +44,72 @@
       <div data-loader="circle-side"></div>
     </div>
     <!-- End Preload -->
-
     <header class="header_sticky">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <div id="logo_home">
-              <h1>
-                <a href="index.html" title="Asuda medical">Asuda medical</a>
-              </h1>
+      <div class="desktop">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <div id="logo_home">
+                <h1>
+                  <a href="index.html" title="Asuda medical">Asuda medical</a>
+                </h1>
+              </div>
             </div>
-          </div>
 
-          <nav class="col-lg-9 col-6 container">
-            <a
-              class="cmn-toggle-switch cmn-toggle-switch__htx open_close"
-              href="#0"
-              ><span>Menu mobile</span></a
-            >
-            <style>
-              .icon-text {
-                font-size: 1rem;
-              }
-            </style>
+            <nav class="col-lg-9 col-6 container">
+              <a
+                id="cmn-mob"
+                class="cmn-toggle-switch cmn-toggle-switch__htx open_close"
+                href="#0"
+                ><span>Menu mobile</span></a
+              >
+              <style>
+                .icon-text {
+                  font-size: 1rem;
+                }
+              </style>
+              <div class="main-desktop user-icon-div">
+                <ul>
+                  <li class="submenu user-desk-icon">
+                    <a href="#0" class="show-submenu"
+                      ><i class="pe-7s-user"> </i
+                    ></a>
+                    <ul id="user-icon-drop">
+                      <li><a href="login.html">Login</a></li>
+                      <li><a href="register.html">Register</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-menu-desktop">
+                <ul>
+                  <li class="submenu">
+                    <a href="#0" class="show-submenu"
+                      >Pages<i class="icon-down-open-mini"></i
+                    ></a>
+                    <ul>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu">
+                    <a href="index.html" class="show-submenu">Home</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /main-menu-desktop -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="mob">
+        <div class="container">
+          <nav id="navbar">
             <div class="main-user user-icon-div">
               <ul>
                 <li class="submenu user-icon">
                   <a href="#0" class="show-submenu"
-                    ><i class="pe-7s-user"> </i
+                    ><i class="pe-7s-user" style="font-size: 2.5rem"> </i
                   ></a>
                   <ul id="user-icon-drop">
                     <li><a href="login.html">Login</a></li>
@@ -79,23 +118,41 @@
                 </li>
               </ul>
             </div>
-            <div class="main-menu">
-              <ul>
-                <li class="submenu">
-                  <a href="#0" class="show-submenu"
-                    >Pages<i class="icon-down-open-mini"></i
-                  ></a>
-                  <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                  </ul>
-                </li>
-                <li class="submenu">
-                  <a href="index.html" class="show-submenu">Home</a>
-                </li>
-              </ul>
+            <div id="logo_home">
+              <h1>
+                <a href="index.html" title="Asuda medical">Asuda medical</a>
+              </h1>
             </div>
-            <!-- /main-menu -->
+            <div class="side-bar">
+              <a
+                class="cmn-toggle-switch cmn-toggle-switch__htx open_close"
+                href="#0"
+                ><span>Menu mobile</span></a
+              >
+              <style>
+                .icon-text {
+                  font-size: 1rem;
+                }
+              </style>
+              <div class="main-menu">
+                <ul>
+                  <li class="submenu">
+                    <a href="#0" class="show-submenu"
+                      >Pages<i class="icon-down-open-mini"></i
+                    ></a>
+                    <ul>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu">
+                    <a href="index.html" class="show-submenu">Home</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /main-menu -->
+            </div>
+            <!-- main-menu -->
           </nav>
         </div>
       </div>
@@ -259,7 +316,6 @@
         </div>
         <!-- /row -->
       </div>
-      <style></style>
       <!-- /container -->
       <div id="doc-slider" class="bg_color_1">
         <div class="container margin_120_95">
