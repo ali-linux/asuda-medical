@@ -44,7 +44,7 @@
       <div data-loader="circle-side"></div>
     </div>
     <!-- End Preload -->
-    <header class="header_sticky">
+    <header id="header">
       <div class="desktop">
         <div class="container">
           <div class="row">
@@ -326,13 +326,6 @@
               oporteat cu pri.
             </p>
           </div>
-          <style>
-            #reccomended .item img {
-              object-fit: cover;
-              /* width: 350px; */
-              height: 500px;
-            }
-          </style>
           <div id="reccomended" class="owl-carousel owl-theme">
             <div class="item">
               <a href="detail-page.html">
@@ -404,6 +397,7 @@
         </div>
         <!-- /container -->
       </div>
+      <style></style>
       <div id="doc-grid" class="bg_color_1">
         <div class="container margin_120_95">
           <div class="main_title">
@@ -430,7 +424,14 @@
                   <h3>Dr. Rawa jamal</h3>
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Hic repellat neque laudantium minima voluptate enim!
+                    Hic repellat neque laudantium minima voluptate enim! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Enim ex
+                    voluptatem blanditiis perspiciatis rerum debitis animi,
+                    laborum asperiores veritatis quasi nesciunt. Suscipit
+                    deleniti nesciunt architecto, cumque nihil enim! Quos unde
+                    accusantium asperiores doloremque, facere itaque veniam quas
+                    nihil! Exercitationem facere voluptate optio non saepe nobis
+                    architecto vero impedit! Vel, reprehenderit.
                   </p>
                 </div>
                 <ul>
@@ -609,9 +610,6 @@
           </div>
         </div>
         <!-- /row -->
-        <p class="text-center">
-          <a href="list.html" class="btn_1 medium">Find Doctor</a>
-        </p>
       </div>
       <!-- /container -->
       <div class="cta_subscribe">
@@ -648,6 +646,64 @@
       </div>
     </main>
     <!-- /main content -->
+    <style>
+      .weather {
+        display: flex;
+      }
+      .weather div {
+        flex: 1;
+      }
+    </style>
+    <div class="weather">
+      <div>
+        <a
+          class="weatherwidget-io"
+          href="https://forecast7.com/en/35d5645d44/sulaymaniyah/"
+          data-label_1="SULAYMANIYAH"
+          data-label_2="WEATHER"
+          data-days="3"
+          data-theme="original"
+          data-basecolor="#222"
+          >SULAYMANIYAH WEATHER</a
+        >
+        <script>
+          !(function (d, s, id) {
+            var js,
+              fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://weatherwidget.io/js/widget.min.js";
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          })(document, "script", "weatherwidget-io-js");
+        </script>
+      </div>
+      <div>
+        <a
+          class="weatherwidget-io"
+          href="https://forecast7.com/en/36d2144d01/erbil/"
+          data-label_1="ERBIL"
+          data-label_2="WEATHER"
+          data-days="3"
+          data-theme="original"
+          data-basecolor="#222"
+          >ERBIL WEATHER</a
+        >
+        <script>
+          !(function (d, s, id) {
+            var js,
+              fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://weatherwidget.io/js/widget.min.js";
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          })(document, "script", "weatherwidget-io-js");
+        </script>
+      </div>
+    </div>
 
     <footer>
       <div class="container margin_60_35">
